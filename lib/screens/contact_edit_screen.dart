@@ -29,13 +29,13 @@ class ContactEditScreen extends StatelessWidget {
           children: [
             TextField(
               controller: nameController,
-              decoration: InputDecoration(labelText: 'Name'),
+              decoration: const InputDecoration(labelText: 'Name'),
             ),
             TextField(
               controller: phoneController,
-              decoration: InputDecoration(labelText: 'Phone'),
+              decoration: const InputDecoration(labelText: 'Phone'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 if (contact == null) {

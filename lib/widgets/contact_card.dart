@@ -6,7 +6,7 @@ class ContactCard extends StatelessWidget {
   final Contact contact;
   final VoidCallback onTap;
 
-  ContactCard({required this.contact, required this.onTap});
+  const ContactCard({required this.contact, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

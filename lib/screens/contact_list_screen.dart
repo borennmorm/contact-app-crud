@@ -11,17 +11,17 @@ class ContactListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contacts'),
+        title: const Text('Contacts'),
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () => Get.to(ContactEditScreen()),
           ),
         ],
       ),
       body: Obx(() {
         if (contactController.contacts.isEmpty) {
-          return Center(child: Text('No contacts found.'));
+          return const Center(child: Text('No contacts found.'));
         } else {
           return ListView.builder(
             itemCount: contactController.contacts.length,

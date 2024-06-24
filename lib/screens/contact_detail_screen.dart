@@ -17,11 +17,11 @@ class ContactDetailScreen extends StatelessWidget {
         title: Text(contact.name),
         actions: [
           IconButton(
-            icon: Icon(Icons.edit),
+            icon: const Icon(Icons.edit),
             onPressed: () => Get.to(ContactEditScreen(contact: contact)),
           ),
           IconButton(
-            icon: Icon(Icons.delete),
+            icon: const Icon(Icons.delete),
             onPressed: () {
               contactController.deleteContact(contact.id);
               Get.back();
@@ -34,9 +34,9 @@ class ContactDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Name: ${contact.name}', style: TextStyle(fontSize: 20)),
-            SizedBox(height: 10),
-            Text('Phone: ${contact.phone}', style: TextStyle(fontSize: 20)),
+            Text('Name: ${contact.name}', style: const TextStyle(fontSize: 20)),
+            const SizedBox(height: 10),
+            Text('Phone: ${contact.phone}', style: const TextStyle(fontSize: 20)),
           ],
         ),
       ),
